@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEVEL 2</title>
+    <style>
+        body {
+    font-family: 'Gothic', sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 50px;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("pexels-cottonbro-studio-5435430.jpg"); 
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+
+
+        button {
+            width: 10%;
+            padding: 10px;
+            background-color: #3903ff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button.hover{
+            background-color: #fdfdfd;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="pg1.html">Previous Page</a></li>
+            <li><a href="pg3.html">Next Page</a></li>
+        </ul>
+    </nav>
+    <div class="level" id="level2">
+        <h1>Level 2</h1>
+        <p>Luckily, You made it to Level 2.</p>
+        <p>Riddle time: A demon drops in from your dark windowsill<br>
+
+            And gives you two choices for how to be killed:<br>
+            
+            “Now tell me a truth and I’ll bite off your head,<br>
+            
+            Or tell me a lie and your guts I will shred.<br>
+            
+            I’ll kindly permit you to pick your own pain,<br>
+            
+            Unless you can stop me with your tiny brain.”<br>
+            
+            A lie or a truth, a truth or a lie?<br>
+            
+            You like all your parts, and don’t wish to die!<br>
+            
+            You sweat for a minute then figure it out.<br>
+            
+            It’s really quite simple – you’re saved, there’s no doubt!<br>
+            
+            You speak and the demon says, “Oh, aren’t you smart?<br>
+            
+            Well, never mind then, I’ll just swallow your heart.”<br>
+            
+            (You can’t stop a demon, no matter how sly…<br>
+            
+            But what truth did you tell? Or what was your lie?)</p>
+        <p> <span style="color: red;">What Would be your answer????????</span></p>
+        <p>Oh How silly, Let me give you a hint, its either true or false</p>
+        
+        </div>
+        </div>
+        <input type="text" id="slideAnswer">
+        <div class="button-container">
+            <button onclick="checkSlide()">Submit</button>
+        </div>
+        </div>
+    <script>
+
+   
+    function checkSlide() {
+        var slideAnswer = document.getElementById('slideAnswer').value.toLowerCase();
+        if (slideAnswer === 'demon') {
+            alert("Go to level 4 to Escape Faster.");
+            document.getElementById('level2').classList.remove('current');
+            document.getElementById('level3').classList.add('current');
+        } else {
+            alert("Incorrect. Try again.");
+        }
+    }
+</script>
+<p> Oh you really thought its true or false hahah what a shame</p>
+        <p>Answer is the riddle</p>
+    </body>
+</html>
+
